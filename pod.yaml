@@ -1,0 +1,15 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata: 
+  name: todopod
+  namespace: multicontainerns
+
+spec:
+  containers:
+  - name: container1
+    image: nginx:latest
+
+    ports:
+    - containerPort: 80
